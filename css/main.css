@@ -1,0 +1,142 @@
+/* html5 */
+header,nav,section,article,aside,footer,hgroup{
+    display: block;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #575756;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-rendering: optimizelegibility;
+}
+
+h2 {
+    font-size: 1.875rem; /* 40px */
+}
+
+p{
+    font-size: inherit;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-rendering: optimizelegibility;
+    font-weight: 400;
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    color: #cacaca;
+    line-height: 0;
+}
+
+
+@media screen and (min-width: 40em) {
+    h1 {
+        font-size: 3rem; /* 48px */
+    }
+    h2 {
+        font-size: 2.5rem; /* 40px */
+    }
+    h3 {
+        font-size: 1.9375rem; /* 31px */
+    }
+    h4 {
+        font-size: 1.5625rem; /* 24px*/
+    }
+    h5 {
+        font-size: 1.25rem; /* 20px */
+    }
+    h6 {
+        font-size: 1rem; /* 16px */
+    }
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body */
+body {
+    background-color: #f3f3f3;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    color: #575756;
+}
+
+/* container */
+.container {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+/* panel */
+.panel {
+    border-bottom:2px solid #e5e5e5;
+    background-image: url('../img/cog2.svg');
+    background-repeat: no-repeat;
+    background-position:right -100px bottom -100px;
+    background-size: 450px 332px;
+    background-color: white;    
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    padding: 1.25em 1.25em 10em;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+/* footer */
+footer {
+    color: #8C8C8C;
+    padding: 0 0.5em;
+}
+
+.center{
+    text-align: center;
+}
+
+/* breakpoint 640px */
+@media (min-width: 40em)
+{
+    .container
+    {
+        justify-content: center;        
+        margin:auto;
+        max-width: 780px;
+    }
+    
+    .panel{
+        border:2px solid #e5e5e5;
+        background-image: url('../img/cog.svg');
+        background-repeat: no-repeat;
+        background-position: right -100px top -100px;
+        background-size: 332px 450px;
+        background-color: white;    
+        border-radius: 5px;
+        height: auto;
+        padding: 5em;
+    }
+    
+    .halfWidth {
+        width:60%;
+    }
+}
